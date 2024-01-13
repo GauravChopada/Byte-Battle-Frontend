@@ -1,0 +1,57 @@
+.Admins {
+  padding: 40px;
+  width: 100vw;
+
+  &__TopBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    margin-bottom: 24px;
+  }
+
+  &__ContentInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    justify-content: center;
+    align-items: start;
+
+    h1 {
+      font-size: 28px;
+      font-weight: 600;
+    }
+
+    h3 {
+      font-size: 14px;
+      color: var(--black-90);
+      font-weight: 300;
+      margin-bottom: 18px;
+    }
+  }
+
+  &__TableContainer {
+    max-height: 70vh;
+    overflow-y: scroll;
+
+    &::-webkit-scrollbar {
+      -webkit-appearance: none;
+      width: 4px;
+      background-color: var(--gray-25);
+    }
+
+    &::-webkit-scrollbar-thumb {
+      border-radius: 4px;
+      background-color: var(--gray-100);
+      box-shadow: 0 0 1px rgba(255, 255, 255, .5);
+    }
+  }
+
+  &__LoadingSpinner {
+    height: 40vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

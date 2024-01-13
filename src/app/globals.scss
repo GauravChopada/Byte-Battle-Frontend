@@ -1,0 +1,59 @@
+:root {
+  --white: #fff;
+  --green: #33FF33;
+  --green-20: #60ff53;
+  --green-30: #7dff6c;
+  --green-40: #95ff83;
+  --green-50: #aaff99;
+  --green-60: #bdffae;
+  --black: #000;
+  --off-black: #111111;
+  --black-100: #eeeeee;
+  --black-90: #999999;
+  --black-80: #888888;
+  --black-70: #777777;
+  --black-60: #666666;
+  --black-50: #555555;
+  --black-40: #444444;
+  --black-30: #333333;
+  --black-20: #222222;
+  --black-10: #111111;
+  --red: #ff0000;
+  --red-20: #ff4323;
+  --red-30: #ff623e;
+  --red-40: #ff7c59;
+  --red-50: #ff9473;
+  --red-60: #ffaa8e;
+  --red-secondary: #fa4b4b;
+  --gray-25: #f9fafb;
+  --gray-50: #f2f3f5;
+  --gray-100: #d5d5db;
+  --gray-200: #b8b9c3;
+  --gray-300: #9596a4;
+  --gray-400: #727486;
+  --gray-500: #4e5168;
+  --gray-600: #2b2e4a;
+  --gray-700: #24263e;
+  --gray-800: #1d1f31;
+  --gray-900: #151725;
+  --gray-1000: #0e0f19;
+  --gray-1100: #09090f;
+  --blue-dark: #0e141e;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: var(--gray-50);
+  color: var(--black);
+}

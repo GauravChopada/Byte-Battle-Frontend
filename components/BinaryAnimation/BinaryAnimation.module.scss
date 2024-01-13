@@ -1,0 +1,18 @@
+.outerDiv {
+  background-color: var(--off-black);
+  overflow: hidden;
+  min-height: 100%;
+
+  div {
+    position: absolute;
+    top: 0;
+    left: 300px;
+    font-family: monospace;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    writing-mode: vertical-rl;
+    text-orientation: sideways;
+    color: var(--green);
+    text-shadow: 0 0 10px var(--green);
+  }
+}

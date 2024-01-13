@@ -1,0 +1,49 @@
+.Header {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  background-color: var(--blue-dark);
+  padding: 0px 24px;
+  border-bottom: 1px solid var(--black-50);
+
+  &__TopBar {
+    flex: 1;
+    padding: 0px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__NavigationBar {
+    display: inline-flex;
+    position: relative;
+    overflow: hidden;
+    gap: 12px;
+  }
+
+  &__NavigationItem {
+    padding: 20px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 300;
+    background-color: inherit;
+    color: var(--black-70);
+    border: none;
+
+    &:hover {
+      color: var(--white);
+    }
+  }
+
+  &__NavigationIndicator {
+    position: absolute;
+    background-color: var(--green);
+    left: 0;
+    bottom: 0;
+    -webkit-transition: .4s;
+    transition: .4s;
+    height: 3px;
+    z-index: 1;
+  }
+}
