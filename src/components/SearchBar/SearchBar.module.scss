@@ -1,0 +1,38 @@
+.SearchBar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: 1px solid var(--black-50);
+  border-radius: 12px;
+
+  input {
+    min-width: 350px;
+    height: 36px;
+    background: var(--white);
+    outline: none;
+    border: none;
+    border-radius: 12px;
+    padding: 0 40px 0 18px;
+    font-size: 1rem;
+    font-weight: 400;
+    transition: all ease-in 0.2s;
+
+    &:focus {
+      min-width: 400px;
+    }
+  }
+
+  button {
+    width: 40px;
+    height: 36px;
+    border: none;
+    outline: none;
+    margin-left: -40px;
+    background: none;
+  }
+
+  svg {
+    width: 18px;
+    height: 18px;
+  }
+}

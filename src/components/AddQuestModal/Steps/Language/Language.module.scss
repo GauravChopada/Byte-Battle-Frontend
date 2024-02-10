@@ -1,0 +1,172 @@
+.Language {
+  display: flex;
+  flex-direction: column;
+  height: 564px;
+  width: 100%;
+  padding: 12px;
+  gap: 16px;
+
+  h3 {
+    color: var(--gray-500);
+    font-weight: 400;
+  }
+
+  h4 {
+    color: var(--gray-500);
+    font-weight: 400;
+
+    strong {
+      color: var(--gray-600);
+      font-weight: 500;
+    }
+  }
+
+  &__TopBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 8px;
+    padding-right: 8px;
+    position: relative;
+  }
+
+  &__SelectionPopUp {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 161px;
+    right: 7px;
+    bottom: 0;
+    transform: translate(0px, 102%);
+    background-color: var(--white);
+    padding-top: 4px;
+    padding-bottom: 4px;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+    z-index: 2;
+    max-height: 200px;
+    overflow: auto;
+
+    p {
+      padding: 4px 8px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: var(--gray-50);
+      }
+    }
+  }
+
+  &__PopUpOverlay {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+
+  &__EmptyState {
+    background-color: var(--gray-50);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__Navigation {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: var(--gray-50);
+    max-width: 800px;
+    border-bottom: 1px solid var(--gray-100);
+
+    button {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 6px;
+      padding: 8px 10px 8px 16px;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: 300;
+      background-color: inherit;
+      color: var(--black-70);
+      border: none;
+      border-bottom: 2px solid var(--gray-50);
+
+      span {
+        padding: 2px;
+        display: flex;
+      }
+
+      svg {
+        width: 16px;
+        color: var(--gray-400);
+      }
+
+      &:hover {
+        background-color: var(--gray-100);
+        color: var(--black);
+        
+        svg {
+          color: var(--black);
+        }
+      }
+
+      span:hover {
+        background-color: var(--gray-200);
+        border-radius: 4px;
+        color: var(--black);
+      }
+    }
+  }
+
+  &__NavigationActive {
+    color: var(--black) !important;
+    border-bottom: 2px solid var(--blue-primary) !important;
+  }
+
+  &__LanguageItemContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-height: 700px;
+    overflow-y: scroll;
+    background-color: var(--gray-50);
+    position: relative;
+    padding-bottom: 16px;
+
+    &::-webkit-scrollbar {
+      -webkit-appearance: none;
+      width: 4px;
+      background-color: var(--gray-25);
+    }
+
+    &::-webkit-scrollbar-thumb {
+      border-radius: 4px;
+      background-color: var(--gray-100);
+      box-shadow: 0 0 1px rgba(255, 255, 255, .5);
+    }
+  }
+
+  &__CodeEditorWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding-left: 14px;
+    padding-right: 14px;
+
+    label {
+      font-size: 16px;
+      font-weight: 500;
+      color: var(--gray-600);
+    }
+  }
+}

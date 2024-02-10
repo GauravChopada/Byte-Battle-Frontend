@@ -1,0 +1,87 @@
+.Chip {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 32px;
+  padding: 0 12px;
+  border-radius: 16px;
+  background-color: var(--gray-50);
+  color: var(--gray-700);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.7142857142857142;
+  letter-spacing: 0.25px;
+  text-transform: uppercase;
+  width: fit-content;
+
+  svg {
+    background-color: #bdbdbd;
+    color: white;
+
+    &:hover {
+      background-color: #9e9e9e;
+    }
+  }
+
+  &.Chip--primary {
+    background-color: #1976d2;
+    color: #fff;
+
+    &:hover {
+      background-color: #115293;
+    }
+
+    &:active {
+      background-color: #0b4f8c;
+    }
+  }
+
+  &.Chip--secondary {
+    background-color: #f50057;
+    color: #fff;
+
+    &:hover {
+      background-color: #c51162;
+    }
+
+    &:active {
+      background-color: #8e0038;
+    }
+  }
+
+  &.Chip--success {
+    background-color: var(--success-light);
+    color: var(--success);
+  }
+
+  &.Chip--warning {
+    background-color: var(--warning-light);
+    color: var(--warning);
+  }
+
+  &.Chip--danger {
+    background-color: var(--danger-light);
+    color: var(--danger);
+  }
+
+  &.Chip--info {
+    background-color: #1976d2;
+    color: #fff;
+
+    &:hover {
+      background-color: #115293;
+    }
+
+    &:active {
+      background-color: #0b4
+    }
+  }
+
+  svg {
+    margin-left: 8px;
+    width: 18px;
+    border-radius: 100%;
+    padding: 2px;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,76 @@
+.QuestDetails {
+  padding: 40px;
+  width: 100vw;
+  height: calc(100vh - 64px);
+
+  &__TopBar {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+  }
+
+  &__TopBarActionButtons {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    justify-content: space-around;
+    background-color: var(--white);
+    padding: 16px;
+    border-radius: 12px;
+    box-shadow: var(--box-shadow-1);
+  }
+
+  &__LoadingSpinner {
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__NavigationBar {
+    margin-top: 32px;
+    margin-bottom: 16px;
+    width: 100%;
+    border-bottom: 1px solid var(--gray-100);
+
+    button {
+      padding: 20px 16px;
+      cursor: pointer;
+      font-size: 18px;
+      font-weight: 300;
+      background-color: inherit;
+      color: var(--black-70);
+      border: none;
+
+      &:hover {
+        color: var(--black);
+      }
+    }
+  }
+
+  &__ActiveTab {
+    color: var(--black) !important ;
+    border-bottom: 2px solid var(--blue-primary) !important;
+  }
+
+  &__RemoveLanguageModal {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    min-width: 500px;
+    padding: 4px;
+
+    h3 {
+      font-size: 20px;
+      font-weight: 300;
+    }
+  }
+
+  &__ModalBottomBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 12px;
+  }
+}

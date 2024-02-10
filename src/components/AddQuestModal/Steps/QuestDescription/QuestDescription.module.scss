@@ -1,0 +1,23 @@
+.QuestDescription {
+  display: flex;
+  flex-direction: column;
+  height: 564px;
+  width: 100%;
+  padding: 12px;
+  gap: 16px;
+
+  &__TimeWrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+
+    span {
+      white-space: nowrap;
+    }
+
+    input {
+      min-width: 100px !important;
+    }
+  }
+}

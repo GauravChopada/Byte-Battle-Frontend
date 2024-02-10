@@ -3,18 +3,16 @@
 import { useEffect, useState } from 'react'
 import { useRouter } from 'next/navigation'
 import Image from 'next/image'
-import jwt from "jsonwebtoken"
 import toast from 'react-hot-toast'
-import type { JwtPayload } from "jsonwebtoken"
 
-import { networkEndpoints } from '../../../network/utils'
-import BinaryAnimation from '../../../components/BinaryAnimation'
-import ByteBattleLogo from '../../../components/ByteBattleLogo'
-import googleSVG from '../../../utils/Icons/Google.svg'
-import LoadingSpinner from '../../../components/LoadingSpinner'
-import networkClient from '../../../network/networkClient'
+import { networkEndpoints } from '@/utils/constants/networkEndpoints'
+import BinaryAnimation from '@/components/BinaryAnimation'
+import ByteBattleLogo from '@/components/ByteBattleLogo'
+import googleSVG from '@/utils/Icons/Google.svg'
+import LoadingSpinner from '@/components/LoadingSpinner'
+import networkClient from '@/network/networkClient'
 import styles from './login.module.scss'
-import type { NetworkClientInputs } from '../../../network/networkClient'
+import type { NetworkClientInputs } from '@/network/networkClient'
 
 const serverBaseURL = process.env.NEXT_PUBLIC_SERVER_BASE_URL;
 const webBaseURL = process.env.NEXT_PUBLIC_WEB_BASE_URL;
