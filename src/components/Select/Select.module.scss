@@ -1,0 +1,54 @@
+.Select {
+  display: flex;
+  gap: 4px;
+  flex-direction: column;
+  width: 100%;
+
+  label {
+    font-size: 12px;
+    font-weight: 500;
+    margin-left: 4px;
+    color: var(--gray-600);
+  }
+
+  select {
+    min-width: 150px;
+    width: fit-content;
+    background-color: var(--white);
+    border-radius: 12px;
+    border: 1px solid var(--gray-100);
+    cursor: pointer;
+    flex: 1;
+    appearance: none;
+    font-size: 16px;
+    padding: 8px 14px;
+    color: var(--black);
+    height: 36px;
+  }
+
+  svg {
+    position: absolute;
+    margin: 0;
+    right: 8px;
+    bottom: 13px;
+    height: 12px;
+  }
+
+  &__Container {
+    position: relative;
+    width: fit-content;
+    cursor: pointer;
+  }
+
+  &__Disabled {
+    select {
+      pointer-events: none;
+      background-color: var(--gray-50);
+      color: var(--gray-200);
+    }
+
+    svg {
+      color: var(--gray-200);
+    }
+  }
+}

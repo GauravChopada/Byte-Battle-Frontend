@@ -1,0 +1,21 @@
+.CheckBox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+
+  label {
+    font-size: 14px;
+    color: var(--gray-800);
+    font-weight: 400;
+  }
+
+  input, label {
+    cursor: pointer;
+  }
+
+  &__Disabled {
+    pointer-events: none;
+    cursor: not-allowed;
+  }
+}

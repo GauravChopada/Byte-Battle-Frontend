@@ -4,8 +4,8 @@ import type { Metadata } from 'next'
 import type { ReactNode } from 'react'
 
 import './globals.scss'
-import ContextProvider from '../../context/providers'
-import Header from '../../components/Header'
+import ContextProvider from '../context/providers'
+import Header from '../components/Header'
 
 const inter = Inter({ subsets: ['latin'] })
 
