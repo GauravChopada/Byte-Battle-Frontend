@@ -1,0 +1,36 @@
+.AddQuestModal {
+  &__TopBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 18px;
+    border-bottom: 1px solid var(--gray-50);
+  }
+
+  &__Title {
+    font-size: 24px;
+  }
+
+  &__CloseIcon {
+    cursor: pointer;
+    border-radius: 4px;
+    height: 28px;
+    width: 28px;
+  
+    &:hover {
+      background-color: var(--gray-50);
+    }
+  }
+
+  &__StepperContainer {
+    min-width: 800px;
+  }
+
+  &__BottomBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    gap: 12px;
+  }
+}

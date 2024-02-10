@@ -3,18 +3,18 @@
 import { useEffect, useState } from 'react'
 import toast from 'react-hot-toast'
 
-import { networkEndpoints } from '../../../network/utils'
-import { systemUsers, systemUsersArray } from '../../../utils/constants/common'
-import { useAuth } from '../../../context/auth'
-import AddSystemUserModal from '../../../components/AddSystemUserModal'
-import Button from '../../../components/Button'
-import CustomTable from "../../../components/CustomTable"
-import LoadingSpinner from '../../../components/LoadingSpinner'
-import networkClient, { NetworkClientInputs } from '../../../network/networkClient'
-import plusSVG from '../../../utils/Icons/Plus.svg'
-import SearchBar from '../../../components/SearchBar'
+import { networkEndpoints } from '@/utils/constants/networkEndpoints'
+import { systemUsers, systemUsersArray } from '@/utils/constants/common'
+import { TableCellTypes } from '@/components/CustomTable/TableCell'
+import { useAuth } from '@/context/auth'
+import AddSystemUserModal from '@/components/AddSystemUserModal'
+import Button from '@/components/Button'
+import CustomTable from "@/components/CustomTable"
+import LoadingSpinner from '@/components/LoadingSpinner'
+import networkClient, { NetworkClientInputs } from '@/network/networkClient'
+import plusSVG from '@/utils/Icons/Plus.svg'
+import SearchBar from '@/components/SearchBar'
 import styles from './admins.module.scss'
-import { TableCellTypes } from '../../../components/CustomTable/TableCell'
 
 const AdminsPage = () => {
   // init
@@ -136,6 +136,9 @@ const AdminsPage = () => {
     setTableData(tempTableData)
   }
 
+  // open add user modal
+  const openAddUserModal = () => { setIsAddUserModalOpen(true) }
+
   // close add user modal
   const closeAddUserModal = () => { setIsAddUserModalOpen(false) }
 
@@ -189,7 +192,7 @@ const AdminsPage = () => {
         <h3>View all system users</h3>
         <SearchBar value={searchBarValue} onChange={onSearchBarValueChange} />
       </div>
-      <Button onClick={() => { setIsAddUserModalOpen(true) }} icon={plusSVG}>Add System User</Button>
+      <Button onClick={openAddUserModal} icon={plusSVG}>Add System User</Button>
     </section>
 
     <section className={styles.Admins__TableContainer}>

@@ -1,0 +1,45 @@
+.AddSystemUserModal {
+  &__TopBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 18px;
+    border-bottom: 1px solid var(--gray-50);
+  }
+
+  &__Title {
+    font-size: 24px;
+  }
+
+  &__CloseIcon {
+    cursor: pointer;
+    border-radius: 4px;
+    height: 28px;
+    width: 28px;
+  
+    &:hover {
+      background-color: var(--gray-50);
+    }
+  }
+
+  &__Form {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-items: flex-start;
+    gap: 24px;
+    padding: 24px 0 36px;
+  }
+
+  &__FormRow {
+    display: flex;
+    flex-direction: row;
+    gap: 18px;
+  }
+
+  &__SubmitButton {
+    display: flex;
+    justify-content: end;
+  }
+}

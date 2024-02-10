@@ -39,6 +39,21 @@
   --gray-1000: #0e0f19;
   --gray-1100: #09090f;
   --blue-dark: #0e141e;
+  --blue-primary: #3F0FFF;
+  --blue-primary-dark: #2c00db;
+  --success: rgb(59, 135, 62);
+  --success-light: rgba(76, 175, 80, 0.08);
+  --danger: rgb(227, 27, 12);
+  --danger-light: rgba(244, 67, 54, 0.08);
+  --warning: rgb(255, 160, 0);
+  --warning-light: rgba(255, 160, 0, 0.08);
+
+  --box-shadow-1: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+  0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+  0 12.5px 10px rgba(0, 0, 0, 0.06),
+  0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+  0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+  0 100px 80px rgba(0, 0, 0, 0.12);
 }
 
 * {
